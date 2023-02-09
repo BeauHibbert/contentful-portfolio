@@ -1,11 +1,11 @@
 import './App.css';
-import Header from './components/header';
-import Footer from './components/footer.jsx';
+import Header from './components/header/header.jsx';
+import Footer from './components/footer/footer.jsx';
 import SingleProjectPage from './pages/single-project/single-project.jsx';
 import AboutMePage from './pages/about-me/about-me.jsx';
 import ContactPage from './pages/contact-page/contact-page.jsx';
 import ProjectPage from './pages/projects/projects.jsx';
-import HomePage from './pages/HomePage/HomePage';
+import HomePage from './pages/homepage/homepage.jsx';
 import {
   BrowserRouter as Router,
   Routes,
