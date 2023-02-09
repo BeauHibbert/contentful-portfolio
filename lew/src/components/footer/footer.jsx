@@ -1,11 +1,9 @@
-
-
 import './footer.scss';
 
 const Footer = () => {
   return (
     <footer>
-      <p>Grayscale Creative | 2022</p>
+      <p>Beau Hibbert | 2023</p>
       <a href="https://github.com/beauhibbert">Site built by Beau Hibbert</a>
     </footer>
   )

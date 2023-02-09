@@ -1,5 +1,5 @@
-import ContactForm from '../../components/ContactForm';
-import './home-page.scss';
+// import ContactForm from '../../components/ContactForm';
+import './homepage.scss';
 
 const HomePage = () => {
   return (
@@ -7,8 +7,8 @@ const HomePage = () => {
       <section className="hero-section">
         <div className="hero-image">
           <div className="hero-content">
-            <h1 className="headline">Grayscale Creative</h1>
-            <p>Some catchy tagline here</p>
+            <h1 className="headline">My Portfolio</h1>
+            <p>Check out these projects</p>
           </div>
         </div>
       </section>
@@ -23,7 +23,7 @@ const HomePage = () => {
             <button className="cta">Contact Me</button>
           </div>
           <div className="about-image">
-            <img src={require('../../assets/hero.png')} alt="Headshot of Crystal Estacio"/>
+            {/* <img src={require('../../assets/hero.png')} alt="Headshot of Beau Hibbert"/> */}
           </div>
         </div>
       </section>
@@ -40,8 +40,8 @@ const HomePage = () => {
         </div>
         
       </section>
-      <section className="services-section padded-section">
-        <h2 className="headline">Services</h2>
+      {/* <section className="about-section padded-section">
+        <h2 className="headline">About Me</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ut ex totam voluptates rerum similique quas iste porro eveniet debitis inventore ipsa atque repudiandae distinctio cumque mollitia nesciunt! Corrupti, molestias.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ut ex totam voluptates rerum similique quas iste porro eveniet debitis inventore ipsa atque repudiandae distinctio cumque mollitia nesciunt! Corrupti, molestias.
@@ -49,10 +49,10 @@ const HomePage = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ut ex totam voluptates rerum similique quas iste porro eveniet debitis inventore ipsa atque repudiandae distinctio cumque mollitia nesciunt! Corrupti, molestias.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ut ex totam voluptates rerum similique quas iste porro eveniet debitis inventore ipsa atque repudiandae distinctio cumque mollitia nesciunt! Corrupti, molestias.
         </p>
-      </section>
-      <section className="contact-form-section padded-section">
+      </section> */}
+      {/* <section className="contact-form-section padded-section">
         <ContactForm></ContactForm>
-      </section>
+      </section> */}
     </div>
   )
 }
