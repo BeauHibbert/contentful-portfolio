@@ -22,15 +22,15 @@ const App = () => {
           element={<HomePage/>}
         />
         <Route 
-          path="portfolio/:slug"
+          path="projects/:slug"
           element={<SingleProjectPage/>}
         />
         <Route 
-          path="portfolio"
+          path="about-me"
           element={<AboutMePage/>}
         />
         <Route 
-          path="services"
+          path="projects"
           element={<ProjectPage/>}
         />
         <Route 

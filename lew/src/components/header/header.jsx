@@ -43,8 +43,8 @@ const Header = () => {
       <nav className="header-nav">
         <button onClick={toggleMobileNav} className="hamburger-button"><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></button> 
         <Link to="/" onClick={toggleActive}>Home</Link>
-        <Link to="/portfolio" onClick={toggleActive}>Portfolio</Link>
-        <Link to="/services" onClick={toggleActive}>Services</Link>
+        <Link to="/projects" onClick={toggleActive}>Projects</Link>
+        <Link to="/about-me" onClick={toggleActive}>About Me</Link>
         <Link to="/contact" onClick={toggleActive}>Contact</Link>
       </nav>
     </header>
