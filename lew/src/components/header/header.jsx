@@ -9,17 +9,17 @@ import './header.scss';
 
 const Header = () => {
 
-  const [logoImage, setLogoImage] = useState(null);
+  // const [logoImage, setLogoImage] = useState(null);
 
-  useEffect(() => {
-    let getLogoImage = async () => {
-      await contentfulDeliveryClient.getEntries({content_type: 'logo'})
-      .then(response => setLogoImage(response.items[0].fields.logoImage.fields.file.url))
-      .catch(error => console.log('Error getting logo image: ', error));
-    };
+  // useEffect(() => {
+  //   let getLogoImage = async () => {
+  //     await contentfulDeliveryClient.getEntries({content_type: 'logo'})
+  //     .then(response => setLogoImage(response.items[0].fields.logoImage.fields.file.url))
+  //     .catch(error => console.log('Error getting logo image: ', error));
+  //   };
 
-    getLogoImage();
-  }, []);
+  //   getLogoImage();
+  // }, []);
 
   // TODO: implement mobile side nav
   const toggleMobileNav = () => {
@@ -37,9 +37,9 @@ const Header = () => {
 
   return (
     <header className="app-header flex justify-between align-center">
-      <div className="header-logo">
+      {/* <div className="header-logo">
         <Link to="/" onClick={toggleActive}><img alt="logo" src={logoImage}/></Link>
-      </div>
+      </div> */}
       <nav className="header-nav">
         <button onClick={toggleMobileNav} className="hamburger-button"><FontAwesomeIcon icon={faBars}></FontAwesomeIcon></button> 
         <Link to="/" onClick={toggleActive}>Home</Link>
