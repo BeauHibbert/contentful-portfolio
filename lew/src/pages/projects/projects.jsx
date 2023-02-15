@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { contentfulDeliveryClient } from '../../contentfulClients';
 import './projects.scss';
+import { Link } from 'react-router-dom';
 
 const ProjectPage = () => {
 
@@ -26,11 +27,13 @@ const ProjectPage = () => {
         {
           allProjects.map((project, index) => {
             return (
-              <div key={index}>
+              <Link to={'/projects/' + project.fields.slug} key={index}>
+              <div className='project'>
                 <h1>{project.fields.projectTitle}</h1>
                 <img src={project.fields.pictureOfProject[0].fields.file.url} alt='project cover image'/>
                 <p>{project.fields.projectDescription.content[0].content[0].value}</p>
               </div>
+              </Link>
             )
           })
         }
