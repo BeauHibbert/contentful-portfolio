@@ -25,7 +25,12 @@ const ProjectPage = () => {
       <div className="projects-wrapper flex justify-around">
         {
           allProjects.map((project, index) => {
-            return <div key={index}><h1>{project.fields.projectTitle}</h1></div>
+            return (
+              <div key={index}>
+                <h1>{project.fields.projectTitle}</h1>
+                <p>{project.fields.projectDescription.content[0].content[0].value}</p>
+              </div>
+            )
           })
         }
       </div>
