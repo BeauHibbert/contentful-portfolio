@@ -38,7 +38,7 @@ const SingleProjectPage = () => {
     <div className="single-project-page-wrapper">
       <div key={singleProject.name} className="project-card-wrapper">
         <h1 className="project-title">{singleProject.fields.projectTitle}</h1>
-        <img src={singleProject.fields.projectImages[0].fields.file.url} className="project-cover-image" alt="logo"/>
+        <img src={singleProject.fields.pictureOfProject[0].fields.file.url} className="project-cover-image" alt="logo"/>
         <p className="project-desc">{singleProject.fields.projectDescription.content[0].content[0].value}</p>
         {/* in order to be accessible to the CDA client, tags must be made public when being created in Contentful */}
         {/* <ul className="project-tags">

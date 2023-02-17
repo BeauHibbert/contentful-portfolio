@@ -1,0 +1,15 @@
+.contact-page-wrapper {
+  text-align: center;
+  a {
+    display: block;
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+  }
+  a:visited{
+    color: black;
+  }
+  a:hover{
+    color: hotpink;
+  }
+}
